@@ -1,37 +1,1234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DSTF — Dkhilalli Services & Travaux Forestiers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DSTF Vision 4.0</title>
+
 <style>
-:root{--red:#ef2028;--blue:#142a78;--ink:#172033;--muted:#6b7280;--bg:#f5f7fb;--card:#fff;--line:#e8eaf1;--green:#159957;--shadow:0 12px 35px #142a7812}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.app{display:flex;min-height:100vh}.sidebar{width:265px;background:linear-gradient(180deg,#111f60,#1b328b);color:#fff;padding:22px 15px;position:fixed;inset:0 auto 0 0;z-index:5}.brand{display:flex;align-items:center;gap:10px;padding:5px 8px 24px;border-bottom:1px solid #ffffff28}.brand img{width:55px;height:55px;object-fit:contain;border-radius:50%;background:white}.brand strong{font-size:19px;line-height:1.1}.brand small{opacity:.75}.nav{margin-top:20px}.nav button{width:100%;text-align:left;background:transparent;color:#dce4ff;padding:13px 14px;border-radius:12px;margin:3px 0}.nav button.active,.nav button:hover{background:#ffffff1c;color:#fff}.nav span{display:inline-block;width:27px}.side-bottom{position:absolute;bottom:20px;left:20px;right:20px;font-size:12px;opacity:.7}.main{margin-left:265px;flex:1;padding:25px;max-width:1700px}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:24px}.top h1{margin:0;font-size:28px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{padding:11px 15px;border-radius:10px;background:var(--blue);color:#fff;font-weight:700}.btn.red{background:var(--red)}.btn.light{background:#fff;color:var(--blue);border:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:var(--shadow)}.metric{display:flex;justify-content:space-between;align-items:center}.metric .icon{font-size:26px}.metric h2{font-size:31px;margin:8px 0}.muted{color:var(--muted);font-size:13px}.section{display:none}.section.active{display:block}.panel{margin-top:18px}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.panel h2{margin:0;font-size:20px}.table-wrap{overflow:auto;background:#fff;border:1px solid var(--line);border-radius:15px}.table{width:100%;border-collapse:collapse;min-width:650px}.table th,.table td{padding:14px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}.table th{background:#fafbfe;color:var(--muted)}.tag{display:inline-block;padding:5px 9px;border-radius:20px;background:#edf1ff;color:var(--blue);font-size:12px;font-weight:700}.tag.green{background:#e8f7ef;color:var(--green)}.tag.red{background:#fff0f0;color:var(--red)}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:22px;border-radius:17px;background:#fff;border:1px solid var(--line);transition:.2s}.service:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.service .emoji{font-size:34px}.service h3{margin:12px 0 7px}.form{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700}.field input,.field select,.field textarea{border:1px solid #dfe3ee;border-radius:10px;padding:12px;background:#fff;outline:none}.field textarea{min-height:110px;resize:vertical}.empty{text-align:center;padding:30px;color:var(--muted)}.hero{background:linear-gradient(110deg,#142a78,#2f55c4);color:#fff;border-radius:20px;padding:27px;display:flex;align-items:center;justify-content:space-between;gap:20px}.hero h2{font-size:30px;margin:0 0 8px}.hero p{opacity:.85;max-width:650px}.hero img{width:120px;height:120px;object-fit:contain;background:#fff;border-radius:50%;padding:8px}.search{padding:11px;border:1px solid var(--line);border-radius:10px;min-width:220px}.modal{position:fixed;inset:0;background:#07102b99;display:none;align-items:center;justify-content:center;padding:20px;z-index:20}.modal.open{display:flex}.modal-box{background:#fff;border-radius:18px;padding:23px;width:min(650px,100%);max-height:90vh;overflow:auto}.close{float:right;background:#f1f3f8;border-radius:50%;width:32px;height:32px}.toast{position:fixed;right:20px;bottom:20px;background:#172033;color:#fff;padding:13px 18px;border-radius:12px;display:none;z-index:30}.rtl{direction:rtl}.rtl .nav button{text-align:right}.rtl .main{margin-left:0;margin-right:265px}.rtl .sidebar{left:auto;right:0}.rtl .table th,.rtl .table td{text-align:right}@media(max-width:1000px){.sidebar{width:78px;padding:15px 9px}.brand strong,.brand small,.nav label,.side-bottom{display:none}.brand{justify-content:center;border:0}.brand img{width:50px}.nav button{text-align:center}.nav span{width:auto}.main{margin-left:78px;padding:17px}.grid{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(2,1fr)}.rtl .main{margin-right:78px}}@media(max-width:600px){.top{align-items:flex-start;flex-direction:column}.grid,.services,.form{grid-template-columns:1fr}.hero{padding:20px}.hero img{width:75px;height:75px}.hero h2{font-size:23px}.main{padding:12px}.search{min-width:0;width:100%}}
-</style></head>
-<body><div class="app" id="app">
-<aside class="sidebar"><div class="brand"><img src="dstf_logo.png"><div><strong>DSTF</strong><br><small>Services & Travaux</small></div></div><nav class="nav" id="nav">
-<button data-page="dashboard" class="active"><span>📊</span><label>Tableau de bord</label></button><button data-page="services"><span>🌳</span><label>Services</label></button><button data-page="clients"><span>👥</span><label>Clients</label></button><button data-page="chantiers"><span>🏗️</span><label>Chantiers</label></button><button data-page="devis"><span>🧾</span><label>Devis</label></button><button data-page="employes"><span>🧑‍🔧</span><label>Employés</label></button><button data-page="demandes"><span>📩</span><label>Demandes</label></button><button data-page="parametres"><span>⚙️</span><label>Paramètres</label></button></nav><div class="side-bottom">DSTF Gestion • Version HTML</div></aside>
-<main class="main"><div class="top"><div><div class="muted">Dkhilalli Services & Travaux Forestiers</div><h1 id="pageTitle">Tableau de bord</h1></div><div class="actions"><button class="btn light" onclick="toggleLang()">عربي / FR</button><button class="btn" onclick="exportData()">⬇ Exporter</button><button class="btn red" onclick="openModal('client')">+ Nouveau client</button></div></div>
-<section id="dashboard" class="section active"><div class="hero"><div><h2>Bienvenue sur DSTF 👋</h2><p>Gérez vos services, vos clients, vos chantiers, vos devis et vos équipes depuis une seule plateforme.</p><button class="btn red" onclick="go('demandes')">Voir les demandes</button></div><img src="dstf_logo.png"></div><div class="grid panel"><div class="card metric"><div><div class="muted">Clients</div><h2 id="mClients">0</h2><small class="muted">Base clients</small></div><div class="icon">👥</div></div><div class="card metric"><div><div class="muted">Chantiers</div><h2 id="mChantiers">0</h2><small class="muted">Projets enregistrés</small></div><div class="icon">🏗️</div></div><div class="card metric"><div><div class="muted">Devis</div><h2 id="mDevis">0</h2><small class="muted">Documents créés</small></div><div class="icon">🧾</div></div><div class="card metric"><div><div class="muted">Demandes</div><h2 id="mDemandes">0</h2><small class="muted">À traiter</small></div><div class="icon">📩</div></div></div><div class="card panel"><div class="panel-head"><h2>Activité récente</h2><button class="btn light" onclick="go('demandes')">Tout voir</button></div><div id="recent"></div></div></section>
-<section id="services" class="section"><div class="services" id="serviceGrid"></div></section>
-<section id="clients" class="section"><div class="panel-head"><h2>Gestion des clients</h2><div class="actions"><input class="search" placeholder="Rechercher…" oninput="renderTable('clients',this.value)"><button class="btn" onclick="openModal('client')">+ Ajouter</button></div></div><div class="table-wrap" id="clientsTable"></div></section>
-<section id="chantiers" class="section"><div class="panel-head"><h2>Gestion des chantiers</h2><button class="btn" onclick="openModal('chantier')">+ Nouveau chantier</button></div><div class="table-wrap" id="chantiersTable"></div></section>
-<section id="devis" class="section"><div class="panel-head"><h2>Devis et estimations</h2><button class="btn" onclick="openModal('devis')">+ Créer un devis</button></div><div class="table-wrap" id="devisTable"></div></section>
-<section id="employes" class="section"><div class="panel-head"><h2>Équipe et employés</h2><button class="btn" onclick="openModal('employe')">+ Ajouter</button></div><div class="table-wrap" id="employesTable"></div></section>
-<section id="demandes" class="section"><div class="panel-head"><h2>Demandes de services</h2><button class="btn" onclick="openModal('demande')">+ Nouvelle demande</button></div><div class="table-wrap" id="demandesTable"></div></section>
-<section id="parametres" class="section"><div class="card"><h2>Paramètres de l’entreprise</h2><p class="muted">Modifiez les informations affichées dans la plateforme.</p><form class="form" onsubmit="saveSettings(event)"><div class="field"><label>Nom de l’entreprise</label><input id="company" value="Dkhilalli Services & Travaux Forestiers"></div><div class="field"><label>E-mail</label><input id="email" type="email" value="contact@dstf.tn"></div><div class="field"><label>Téléphone</label><input id="phone" value="+216 XX XXX XXX"></div><div class="field"><label>Ville / Adresse</label><input id="address" value="Tunisie"></div><div class="field full"><label>Description</label><textarea id="description">Services forestiers, espaces verts, nettoyage, sécurité et formation.</textarea></div><div><button class="btn">Enregistrer</button></div></form><hr><h3>Gestion des données</h3><button class="btn light" onclick="importData()">⬆ Importer JSON</button> <button class="btn red" onclick="resetData()">Réinitialiser les données</button><input type="file" id="fileInput" accept="application/json" hidden></div></section>
-</main></div><div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><h2 id="modalTitle">Ajouter</h2><form id="modalForm" class="form"></form></div></div><div class="toast" id="toast"></div>
+
+:root {
+    --primary: #087653;
+    --secondary: #10b981;
+    --dark: #063d30;
+    --background: #f3f7f5;
+    --white: #ffffff;
+    --text: #18332b;
+    --gray: #71847c;
+    --border: #dce9e2;
+    --gold: #f4bd45;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(160deg, #063d30, #0b8b63);
+    color: white;
+    padding: 20px 15px;
+    overflow-y: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    background: white;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.logo h2 {
+    margin: 10px 0 0;
+}
+
+.logo p {
+    font-size: 12px;
+    opacity: .8;
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu button:hover,
+.menu button.active {
+    background: rgba(255,255,255,.2);
+}
+
+/* MAIN */
+
+.main {
+    margin-left: 250px;
+    padding: 25px;
+    width: calc(100% - 250px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.gold {
+    background: var(--gold);
+    color: var(--text);
+}
+
+/* SECTIONS */
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* HERO */
+
+.hero {
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #063d30, #10b981);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+.hero img {
+    width: 140px;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* CARDS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.04);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.number {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary);
+    margin: 10px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* PANELS */
+
+.panel {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+.muted {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+/* FORMS */
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: #f8fbf9;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+/* TABLES */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th,
+td {
+    padding: 13px 10px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    font-size: 12px;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 9px;
+    background: #dff6e9;
+    color: var(--primary);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* SERVICES */
+
+.service {
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    transition: .2s;
+}
+
+.service:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+}
+
+.service-icon {
+    font-size: 35px;
+}
+
+/* MOBILE */
+
+@media(max-width: 1000px) {
+
+    .sidebar {
+        width: 75px;
+        padding: 12px 8px;
+    }
+
+    .logo h2,
+    .logo p,
+    .menu span {
+        display: none;
+    }
+
+    .logo img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .main {
+        margin-left: 75px;
+        width: calc(100% - 75px);
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .main {
+        padding: 12px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .hero img {
+        width: 80px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="dstf_logo.png" alt="Logo DSTF">
+
+<h2>DSTF</h2>
+
+<p>Vision 4.0</p>
+
+</div>
+
+<nav class="menu">
+
+<button class="active" onclick="openSection('dashboard',this)">
+📊 <span>Tableau de bord</span>
+</button>
+
+<button onclick="openSection('clients',this)">
+👥 <span>Clients</span>
+</button>
+
+<button onclick="openSection('chantiers',this)">
+🏗️ <span>Chantiers</span>
+</button>
+
+<button onclick="openSection('devis',this)">
+🧾 <span>Devis & factures</span>
+</button>
+
+<button onclick="openSection('services',this)">
+🌳 <span>Services</span>
+</button>
+
+<button onclick="openSection('equipe',this)">
+👷 <span>Équipe</span>
+</button>
+
+<button onclick="openSection('demandes',this)">
+📩 <span>Demandes</span>
+</button>
+
+<button onclick="openSection('parametres',this)">
+⚙️ <span>Paramètres</span>
+</button>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header class="header">
+
+<div>
+
+<p class="muted">ESPACE PROFESSIONNEL</p>
+
+<h1 id="pageTitle">Tableau de bord</h1>
+
+</div>
+
+<button class="gold" onclick="openSection('devis')">
++ Nouveau devis
+</button>
+
+</header>
+
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="section active">
+
+<div class="hero">
+
+<div>
+
+<h2>Bienvenue sur DSTF Vision</h2>
+
+<p>
+Gérez votre entreprise, vos clients, vos chantiers,
+vos devis et vos demandes depuis une seule plateforme.
+</p>
+
+<button class="gold" onclick="openSection('chantiers')">
+Gérer les chantiers
+</button>
+
+</div>
+
+<img src="dstf_logo.png" alt="DSTF">
+
+</div>
+
+<div class="stats">
+
+<div class="card">
+<h3>👥 Clients</h3>
+<div class="number" id="totalClients">0</div>
+<p class="muted">Clients enregistrés</p>
+</div>
+
+<div class="card">
+<h3>🏗️ Chantiers</h3>
+<div class="number" id="totalChantiers">0</div>
+<p class="muted">Chantiers actifs</p>
+</div>
+
+<div class="card">
+<h3>🧾 Devis</h3>
+<div class="number" id="totalDevis">0</div>
+<p class="muted">Devis enregistrés</p>
+</div>
+
+<div class="card">
+<h3>📩 Demandes</h3>
+<div class="number" id="totalDemandes">0</div>
+<p class="muted">Demandes reçues</p>
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="service">
+<div class="service-icon">🌳</div>
+<h3>Travaux forestiers</h3>
+<p class="muted">
+Entretien forestier, débroussaillage,
+élagage et travaux spécialisés.
+</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🌿</div>
+<h3>Espaces verts</h3>
+<p class="muted">
+Aménagement, création et entretien
+des espaces verts.
+</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🧹</div>
+<h3>Nettoyage</h3>
+<p class="muted">
+Nettoyage professionnel des sites
+et bâtiments.
+</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🛡️</div>
+<h3>Sécurité</h3>
+<p class="muted">
+Services de sécurité selon les
+autorisations applicables.
+</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🎓</div>
+<h3>Formation</h3>
+<p class="muted">
+Formation et accompagnement
+professionnel.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CLIENTS -->
+
+<section id="clients" class="section">
+
+<div class="panel">
+
+<h2>👥 Gestion des clients</h2>
+
+<form id="clientForm">
+
+<label>
+Nom ou entreprise
+<input id="clientName" required>
+</label>
+
+<label>
+Téléphone
+<input id="clientPhone">
+</label>
+
+<label>
+E-mail
+<input type="email" id="clientEmail">
+</label>
+
+<label>
+Ville
+<input id="clientCity">
+</label>
+
+<button class="full">
+Ajouter le client
+</button>
+
+</form>
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+<tr>
+<th>Nom</th>
+<th>Téléphone</th>
+<th>E-mail</th>
+<th>Ville</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="clientsTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CHANTIERS -->
+
+<section id="chantiers" class="section">
+
+<div class="panel">
+
+<h2>🏗️ Gestion des chantiers</h2>
+
+<form id="chantierForm">
+
+<label>
+Nom du chantier
+<input id="chantierName" required>
+</label>
+
+<label>
+Client
+<input id="chantierClient" required>
+</label>
+
+<label>
+Type de service
+<select id="chantierService">
+<option>Travaux forestiers</option>
+<option>Espaces verts</option>
+<option>Nettoyage</option>
+<option>Sécurité</option>
+<option>Formation</option>
+</select>
+</label>
+
+<label>
+Statut
+<select id="chantierStatus">
+<option>Préparation</option>
+<option>En cours</option>
+<option>Terminé</option>
+</select>
+</label>
+
+<label>
+Budget en euros
+<input type="number" id="chantierBudget">
+</label>
+
+<button class="full">
+Créer le chantier
+</button>
+
+</form>
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+<tr>
+<th>Chantier</th>
+<th>Client</th>
+<th>Service</th>
+<th>Statut</th>
+<th>Budget</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="chantiersTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DEVIS -->
+
+<section id="devis" class="section">
+
+<div class="panel">
+
+<h2>🧾 Création de devis</h2>
+
+<form id="devisForm">
+
+<label>
+Client
+<input id="devisClient" required>
+</label>
+
+<label>
+Référence
+<input id="devisReference" placeholder="DSTF-2026-001">
+</label>
+
+<label>
+Service
+<select id="devisService">
+<option>Travaux forestiers</option>
+<option>Espaces verts</option>
+<option>Nettoyage</option>
+<option>Sécurité</option>
+<option>Formation</option>
+</select>
+</label>
+
+<label>
+Montant HT (€)
+<input type="number" id="devisMontant" required>
+</label>
+
+<label>
+TVA (%)
+<input type="number" id="devisTVA" value="20">
+</label>
+
+<button class="full">
+Enregistrer le devis
+</button>
+
+</form>
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+<tr>
+<th>Référence</th>
+<th>Client</th>
+<th>Service</th>
+<th>Total TTC</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="devisTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="section">
+
+<div class="grid">
+
+<div class="service">
+<div class="service-icon">🌳</div>
+<h2>Travaux forestiers</h2>
+<p>Travaux d'entretien et d'aménagement forestier.</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🌿</div>
+<h2>Espaces verts</h2>
+<p>Création et entretien des espaces paysagers.</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🧹</div>
+<h2>Nettoyage</h2>
+<p>Nettoyage de bâtiments et de sites.</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🛡️</div>
+<h2>Sécurité</h2>
+<p>Solutions de sécurité adaptées aux besoins.</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🎓</div>
+<h2>Formation</h2>
+<p>Formation et accompagnement professionnel.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EQUIPE -->
+
+<section id="equipe" class="section">
+
+<div class="panel">
+
+<h2>👷 Gestion de l'équipe</h2>
+
+<form id="equipeForm">
+
+<label>
+Nom complet
+<input id="equipeNom" required>
+</label>
+
+<label>
+Fonction
+<input id="equipeFonction" required>
+</label>
+
+<label>
+Téléphone
+<input id="equipeTelephone">
+</label>
+
+<button class="full">
+Ajouter un membre
+</button>
+
+</form>
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+<tr>
+<th>Nom</th>
+<th>Fonction</th>
+<th>Téléphone</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="equipeTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DEMANDES -->
+
+<section id="demandes" class="section">
+
+<div class="panel">
+
+<h2>📩 Demandes de services</h2>
+
+<form id="demandeForm">
+
+<label>
+Nom du demandeur
+<input id="demandeNom" required>
+</label>
+
+<label>
+Contact
+<input id="demandeContact">
+</label>
+
+<label>
+Service demandé
+<select id="demandeService">
+<option>Travaux forestiers</option>
+<option>Espaces verts</option>
+<option>Nettoyage</option>
+<option>Sécurité</option>
+<option>Formation</option>
+</select>
+</label>
+
+<label class="full">
+Message
+<textarea id="demandeMessage"></textarea>
+</label>
+
+<button class="full">
+Enregistrer la demande
+</button>
+
+</form>
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+<tr>
+<th>Nom</th>
+<th>Contact</th>
+<th>Service</th>
+<th>Message</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="demandesTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PARAMETRES -->
+
+<section id="parametres" class="section">
+
+<div class="panel">
+
+<h2>⚙️ Paramètres de l'entreprise</h2>
+
+<form id="parametresForm">
+
+<label>
+Nom de l'entreprise
+<input id="entrepriseNom"
+value="DSTF — Dkhilalli Services & Travaux Forestiers">
+</label>
+
+<label>
+E-mail professionnel
+<input id="entrepriseEmail">
+</label>
+
+<label>
+Téléphone
+<input id="entrepriseTelephone">
+</label>
+
+<label>
+Localisation
+<input id="entrepriseLocalisation" value="Tunisie">
+</label>
+
+<button class="full">
+Sauvegarder les paramètres
+</button>
+
+</form>
+
+<br>
+
+<button onclick="exporterDonnees()">
+⬇ Exporter les données
+</button>
+
+<button onclick="reinitialiser()">
+Réinitialiser
+</button>
+
+</div>
+
+</section>
+
+</main>
+
 <script>
-const services=[['🌲','Travaux forestiers','Exploitation, entretien et aménagement des forêts.'],['🌿','Espaces verts','Création et entretien des jardins et espaces verts.'],['🌱','Jardinage','Taille, plantation, arrosage et entretien.'],['🧹','Nettoyage','Nettoyage des locaux, sites et espaces extérieurs.'],['🛡️','Sécurité générale','Solutions de surveillance et de protection.'],['🚨','Sécurité privée','Services de gardiennage selon la réglementation.'],['🤝','Accompagnement vital','Accompagnement et assistance personnalisée.'],['🎓','Formation','Formation dans la protection et la sécurité.'],['🪵','Production forestière','Travaux de plantation, récolte et valorisation.']];
-const blank={clients:[],chantiers:[],devis:[],employes:[],demandes:[],settings:{}};let db=JSON.parse(localStorage.getItem('dstfDB')||'null')||blank;let current='dashboard';let lang='fr';
-function save(){localStorage.setItem('dstfDB',JSON.stringify(db));updateMetrics()}function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function toast(s){let t=document.getElementById('toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2300)}
-function go(page){current=page;document.querySelectorAll('.section').forEach(x=>x.classList.toggle('active',x.id===page));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===page));document.getElementById('pageTitle').textContent=document.querySelector(`[data-page="${page}"] label`).textContent;renderAll()}
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>go(b.dataset.page));
-function updateMetrics(){['clients','chantiers','devis','demandes'].forEach(k=>document.getElementById('m'+k[0].toUpperCase()+k.slice(1)).textContent=db[k].length);document.getElementById('recent').innerHTML=db.demandes.length?db.demandes.slice(-5).reverse().map(x=>`<p>📩 <b>${esc(x.nom)}</b> — ${esc(x.service)} <span class="tag">${esc(x.statut||'Nouvelle')}</span></p>`).join(''):'<div class="empty">Aucune activité pour le moment.</div>'}
-function renderServices(){document.getElementById('serviceGrid').innerHTML=services.map((s,i)=>`<article class="service"><div class="emoji">${s[0]}</div><h3>${s[1]}</h3><p class="muted">${s[2]}</p><button class="btn light" onclick="openService('${esc(s[1])}')">Demander un devis →</button></article>`).join('')}
-const configs={clients:{title:'Client',fields:[['nom','Nom complet','text'],['telephone','Téléphone','tel'],['email','E-mail','email'],['adresse','Adresse','text']]},chantiers:{title:'Chantier',fields:[['nom','Nom du chantier','text'],['client','Client','text'],['service','Service','text'],['statut','Statut','select:Nouveau|En cours|Terminé'],['date','Date','date']]},devis:{title:'Devis',fields:[['client','Client','text'],['objet','Objet','text'],['montant','Montant (€ / TND)','number'],['statut','Statut','select:Brouillon|Envoyé|Accepté|Refusé']]},employes:{title:'Employé',fields:[['nom','Nom complet','text'],['poste','Fonction','text'],['telephone','Téléphone','tel'],['statut','Statut','select:Actif|Inactif']]},demandes:{title:'Demande',fields:[['nom','Nom du demandeur','text'],['telephone','Téléphone','tel'],['service','Service demandé','text'],['date','Date souhaitée','date'],['statut','Statut','select:Nouvelle|En traitement|Terminée|Annulée'],['message','Message','textarea']]}};
-function table(k,query=''){let arr=db[k].filter(x=>Object.values(x).join(' ').toLowerCase().includes(query.toLowerCase()));let cols=Object.keys(configs[k].fields.reduce((a,f)=>(a[f[0]]=1,a),{}));let headers=cols.map(c=>configs[k].fields.find(f=>f[0]===c)[1]);let html=`<table class="table"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join('')}<th>Actions</th></tr></thead><tbody>`;html+=arr.map(x=>`<tr>${cols.map(c=>`<td>${c==='statut'?`<span class="tag ${x[c]==='Terminé'||x[c]==='Accepté'||x[c]==='Actif'?'green':x[c]==='Annulée'||x[c]==='Refusé'?'red':''}">${esc(x[c]||'—')}</span>`:esc(x[c]||'—')}</td>`).join('')}<td><button class="btn light" onclick="edit('${k}','${x.id}')">Modifier</button> <button class="btn red" onclick="removeItem('${k}','${x.id}')">×</button></td></tr>`).join('');return html+'</tbody></table>'+(arr.length?'':'<div class="empty">Aucun élément enregistré.</div>')}
-function renderTable(k,q=''){document.getElementById(k+'Table').innerHTML=table(k,q)}function renderAll(){updateMetrics();renderServices();['clients','chantiers','devis','employes','demandes'].forEach(k=>renderTable(k))}
-function openModal(type,editObj=null){let k=type==='client'?'clients':type==='chantier'?'chantiers':type==='employe'?'employes':type==='demande'?'demandes':'devis';let c=configs[k];document.getElementById('modalTitle').textContent=(editObj?'Modifier ': 'Ajouter ')+c.title;document.getElementById('modalForm').innerHTML=c.fields.map(f=>{let [key,label,typ]=f;if(typ.startsWith('select:'))return `<div class="field"><label>${label}</label><select name="${key}">${typ.slice(7).split('|').map(v=>`<option>${v}</option>`).join('')}</select></div>`;return `<div class="field ${typ==='textarea'?'full':''}"><label>${label}</label>${typ==='textarea'?`<textarea name="${key}"></textarea>`:`<input name="${key}" type="${typ}">`}</div>`}).join('')+`<div class="field full"><button class="btn" type="submit">Enregistrer</button></div>`;if(editObj)Object.entries(editObj).forEach(([key,val])=>{let e=document.querySelector(`#modalForm [name="${key}"]`);if(e)e.value=val});document.getElementById('modalForm').onsubmit=e=>{e.preventDefault();let obj=Object.fromEntries(new FormData(e.target));obj.id=editObj?.id||Date.now().toString();if(editObj)db[k]=db[k].map(x=>x.id===obj.id?obj:x);else db[k].push(obj);save();closeModal();renderAll();toast('Enregistrement effectué')};document.getElementById('modal').classList.add('open')}
-function edit(k,id){openModal(k==='clients'?'client':k==='chantiers'?'chantier':k==='employes'?'employe':k==='demandes'?'demande':'devis',db[k].find(x=>x.id===id))}function removeItem(k,id){if(confirm('Supprimer cet élément ?')){db[k]=db[k].filter(x=>x.id!==id);save();renderAll();toast('Élément supprimé')}}function closeModal(){document.getElementById('modal').classList.remove('open')}function openService(s){openModal('demande');setTimeout(()=>{let e=document.querySelector('#modalForm [name="service"]');if(e)e.value=s},0)}
-function exportData(){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(db,null,2)],{type:'application/json'}));a.download='dstf-sauvegarde.json';a.click();toast('Sauvegarde exportée')}function importData(){document.getElementById('fileInput').click()}document.getElementById('fileInput').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{db=JSON.parse(r.result);save();renderAll();toast('Données importées')}catch{toast('Fichier invalide')}};r.readAsText(f)}function resetData(){if(confirm('Effacer toutes les données ?')){db=JSON.parse(JSON.stringify(blank));save();renderAll()}}function saveSettings(e){e.preventDefault();db.settings={company:company.value,email:email.value,phone:phone.value,address:address.value,description:description.value};save();toast('Paramètres enregistrés')}function toggleLang(){lang=lang==='fr'?'ar':'fr';document.getElementById('app').classList.toggle('rtl',lang==='ar');toast(lang==='ar'?'الوضع العربي مفعّل':'Mode français activé')}
-renderAll();
-</script></body></html>
+
+// BASE DE DONNÉES LOCALE
+
+let db = JSON.parse(
+localStorage.getItem("dstfVision40") ||
+'{"clients":[],"chantiers":[],"devis":[],"equipe":[],"demandes":[]}'
+);
+
+function sauvegarder() {
+    localStorage.setItem("dstfVision40", JSON.stringify(db));
+    afficherDonnees();
+}
+
+// NAVIGATION
+
+function openSection(id, button) {
+
+    document.querySelectorAll(".section")
+    .forEach(section => section.classList.remove("active"));
+
+    document.getElementById(id).classList.add("active");
+
+    document.querySelectorAll(".menu button")
+    .forEach(btn => btn.classList.remove("active"));
+
+    if (button) button.classList.add("active");
+
+    const titles = {
+        dashboard: "Tableau de bord",
+        clients: "Clients",
+        chantiers: "Chantiers",
+        devis: "Devis & factures",
+        services: "Services",
+        equipe: "Équipe",
+        demandes: "Demandes",
+        parametres: "Paramètres"
+    };
+
+    document.getElementById("pageTitle").textContent =
+        titles[id] || "DSTF Vision";
+}
+
+// CLIENTS
+
+document.getElementById("clientForm").onsubmit = function(e) {
+
+    e.preventDefault();
+
+    db.clients.push({
+        nom: clientName.value,
+        telephone: clientPhone.value,
+        email: clientEmail.value,
+        ville: clientCity.value
+    });
+
+    this.reset();
+    sauvegarder();
+
+};
+
+// CHANTIERS
+
+document.getElementById("chantierForm").onsubmit = function(e) {
+
+    e.preventDefault();
+
+    db.chantiers.push({
+        nom: chantierName.value,
+        client: chantierClient.value,
+        service: chantierService.value,
+        statut: chantierStatus.value,
+        budget: chantierBudget.value
+    });
+
+    this.reset();
+    sauvegarder();
+
+};
+
+// DEVIS
+
+document.getElementById("devisForm").onsubmit = function(e) {
+
+    e.preventDefault();
+
+    db.devis.push({
+        reference: devisReference.value || "DSTF-" + Date.now(),
+        client: devisClient.value,
+        service: devisService.value,
+        montant: Number(devisMontant.value),
+        tva: Number(devisTVA.value)
+    });
+
+    this.reset();
+    devisTVA.value = 20;
+    sauvegarder();
+
+};
+
+// EQUIPE
+
+document.getElementById("equipeForm").onsubmit = function(e) {
+
+    e.preventDefault();
+
+    db.equipe.push({
+        nom: equipeNom.value,
+        fonction: equipeFonction.value,
+        telephone: equipeTelephone.value
+    });
+
+    this.reset();
+    sauvegarder();
+
+};
+
+// DEMANDES
+
+document.getElementById("demandeForm").onsubmit = function(e) {
+
+    e.preventDefault();
+
+    db.demandes.push({
+        nom: demandeNom.value,
+        contact: demandeContact.value,
+        service: demandeService.value,
+        message: demandeMessage.value
+    });
+
+    this.reset();
+    sauvegarder();
+
+};
+
+// AFFICHAGE
+
+function afficherDonnees() {
+
+    totalClients.textContent = db.clients.length;
+
+    totalChantiers.textContent =
+        db.chantiers.filter(x => x.statut !== "Terminé").length;
+
+    totalDevis.textContent = db.devis.length;
+
+    totalDemandes.textContent = db.demandes.length;
+
+    clientsTable.innerHTML = db.clients.map((x,i) => `
+    <tr>
+        <td>${x.nom}</td>
+        <td>${x.telephone}</td>
+        <td>${x.email}</td>
+        <td>${x.ville}</td>
+        <td><button onclick="supprimer('clients',${i})">X</button></td>
+    </tr>
+    `).join("");
+
+    chantiersTable.innerHTML = db.chantiers.map((x,i) => `
+    <tr>
+        <td>${x.nom}</td>
+        <td>${x.client}</td>
+        <td>${x.service}</td>
+        <td><span class="badge">${x.statut}</span></td>
+        <td>${x.budget || 0} €</td>
+        <td><button onclick="supprimer('chantiers',${i})">X</button></td>
+    </tr>
+    `).join("");
+
+    devisTable.innerHTML = db.devis.map((x,i) => `
+    <tr>
+        <td>${x.reference}</td>
+        <td>${x.client}</td>
+        <td>${x.service}</td>
+        <td>${(x.montant * (1 + x.tva / 100)).toFixed(2)} €</td>
+        <td><button onclick="supprimer('devis',${i})">X</button></td>
+    </tr>
+    `).join("");
+
+    equipeTable.innerHTML = db.equipe.map((x,i) => `
+    <tr>
+        <td>${x.nom}</td>
+        <td>${x.fonction}</td>
+        <td>${x.telephone}</td>
+        <td><button onclick="supprimer('equipe',${i})">X</button></td>
+    </tr>
+    `).join("");
+
+    demandesTable.innerHTML = db.demandes.map((x,i) => `
+    <tr>
+        <td>${x.nom}</td>
+        <td>${x.contact}</td>
+        <td>${x.service}</td>
+        <td>${x.message}</td>
+        <td><button onclick="supprimer('demandes',${i})">X</button></td>
+    </tr>
+    `).join("");
+
+}
+
+// SUPPRESSION
+
+function supprimer(type, index) {
+
+    if (confirm("Voulez-vous supprimer cet élément ?")) {
+
+        db[type].splice(index, 1);
+
+        sauvegarder();
+
+    }
+
+}
+
+// EXPORT
+
+function exporterDonnees() {
+
+    const fichier = new Blob(
+        [JSON.stringify(db, null, 2)],
+        {type: "application/json"}
+    );
+
+    const lien = document.createElement("a");
+
+    lien.href = URL.createObjectURL(fichier);
+
+    lien.download = "dstf-sauvegarde.json";
+
+    lien.click();
+
+}
+
+// RESET
+
+function reinitialiser() {
+
+    if (confirm("Effacer toutes les données ?")) {
+
+        localStorage.removeItem("dstfVision40");
+
+        location.reload();
+
+    }
+
+}
+
+// INITIALISATION
+
+afficherDonnees();
+
+</script>
+
+</body>
+</html>
